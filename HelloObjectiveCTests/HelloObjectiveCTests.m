@@ -7,6 +7,10 @@
 //
 
 #import "HelloObjectiveCTests.h"
+#import "MyClass.h"
+#import "MyClass+Additions.h"
+
+// Seite 85
 
 @implementation HelloObjectiveCTests
 
@@ -20,15 +24,41 @@
 - (void)tearDown
 {
     // Tear-down code here.
-    // asdf
-    // asdf2
     
     [super tearDown];
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in HelloObjectiveCTests");
+    //NSString *myString = @"My String";
+    //NSString *anotherString = [NSString stringWithFormat:@"%d %@", 1, @"String"];
+    
+    //STFail(@"Unit tests are not implemented yet in HelloObjectiveCTests");
+    
+    MyClass *m = [[MyClass alloc] init];
+    int i = [m magicNumer];
+    NSLog(@"MyFirst Test output: %d", i);
+    
+    if (m == nil)
+    {
+        NSLog(@"Object not initialized!");
+    }
+    NSDate *myDate = [NSDate date];
+    NSLog(@"Date: %@", myDate);
+    
+    //[myDate dateWithCalendarFormat:@"2000-01-01" timeZone:NSTimeZone];
+    //[m setBirth:@"1983-09-05"];
+    m.firstName = @"asdf";
+    
+    // Category
+    NSString *str  = @"HelloCategory";
+    [str reverseName];
+    
+    
+    NSNumber *someNumber = [[NSNumber alloc] initWithInt:22];
+    NSNumber *numberTwo = [NSNumber numberWithBool:TRUE];
+    
+    
 }
 
 @end

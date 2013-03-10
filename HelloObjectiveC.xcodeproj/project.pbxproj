@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31AE66016ECB2AF00D70179 /* MyClass+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D31AE65F16ECB2AF00D70179 /* MyClass+Additions.m */; };
 		D3FF8DC716EB350A00E2D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FF8DC616EB350A00E2D173 /* Cocoa.framework */; };
 		D3FF8DD116EB350A00E2D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3FF8DCF16EB350A00E2D173 /* InfoPlist.strings */; };
 		D3FF8DD316EB350A00E2D173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FF8DD216EB350A00E2D173 /* main.m */; };
@@ -17,6 +18,7 @@
 		D3FF8DE616EB350A00E2D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FF8DC616EB350A00E2D173 /* Cocoa.framework */; };
 		D3FF8DEE16EB350A00E2D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3FF8DEC16EB350A00E2D173 /* InfoPlist.strings */; };
 		D3FF8DF116EB350A00E2D173 /* HelloObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FF8DF016EB350A00E2D173 /* HelloObjectiveCTests.m */; };
+		D3FF8DFC16EB451500E2D173 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FF8DFB16EB451500E2D173 /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D31AE65E16ECB2AF00D70179 /* MyClass+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyClass+Additions.h"; sourceTree = "<group>"; };
+		D31AE65F16ECB2AF00D70179 /* MyClass+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyClass+Additions.m"; sourceTree = "<group>"; };
+		D31AE66116ECC75600D70179 /* MyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
 		D3FF8DC316EB350A00E2D173 /* HelloObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FF8DC616EB350A00E2D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D3FF8DC916EB350A00E2D173 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +54,8 @@
 		D3FF8DED16EB350A00E2D173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3FF8DEF16EB350A00E2D173 /* HelloObjectiveCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloObjectiveCTests.h; sourceTree = "<group>"; };
 		D3FF8DF016EB350A00E2D173 /* HelloObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloObjectiveCTests.m; sourceTree = "<group>"; };
+		D3FF8DFA16EB451500E2D173 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		D3FF8DFB16EB451500E2D173 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +147,11 @@
 				D3FF8DEF16EB350A00E2D173 /* HelloObjectiveCTests.h */,
 				D3FF8DF016EB350A00E2D173 /* HelloObjectiveCTests.m */,
 				D3FF8DEA16EB350A00E2D173 /* Supporting Files */,
+				D3FF8DFA16EB451500E2D173 /* MyClass.h */,
+				D3FF8DFB16EB451500E2D173 /* MyClass.m */,
+				D31AE65E16ECB2AF00D70179 /* MyClass+Additions.h */,
+				D31AE65F16ECB2AF00D70179 /* MyClass+Additions.m */,
+				D31AE66116ECC75600D70179 /* MyProtocol.h */,
 			);
 			path = HelloObjectiveCTests;
 			sourceTree = "<group>";
@@ -271,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3FF8DF116EB350A00E2D173 /* HelloObjectiveCTests.m in Sources */,
+				D3FF8DFC16EB451500E2D173 /* MyClass.m in Sources */,
+				D31AE66016ECB2AF00D70179 /* MyClass+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +466,7 @@
 				D3FF8DF616EB350A00E2D173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3FF8DF716EB350A00E2D173 /* Build configuration list for PBXNativeTarget "HelloObjectiveCTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +475,7 @@
 				D3FF8DF916EB350A00E2D173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
